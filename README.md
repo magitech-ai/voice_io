@@ -129,7 +129,11 @@ uv run voice-io --transcribe samples/mira_1.wav --stt-model base --json
 ## Development & Verification
 
 ```bash
-# Run test suite
+# Source-only smoke tests, also used in CI (no TTS model weights required)
+uv run --locked python -m pytest -q tests/test_source_only.py
+
+# Full test suite; model-backed TTS tests require the separately obtained
+# weights described above
 uv run pytest -v
 
 # Check Google Python Style Guide compliance
