@@ -1,0 +1,14 @@
+.venv/
+.cache/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+.coverage
+.coverage.*
+build/
+dist/
+*.egg-info/
+out.wav
+woof_int8.npz
